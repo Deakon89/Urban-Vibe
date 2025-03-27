@@ -1,0 +1,11 @@
+ <div>
+ <h2>Search City</h2>
+    <mat-form-field appearance="outline" class="searchbar">  
+    <mat-label>Cerca</mat-label>
+    <input matInput [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Inserisci testo...">
+    <button mat-icon-button matSuffix (click)="clearSearch()" *ngIf="searchQuery">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+</div>
