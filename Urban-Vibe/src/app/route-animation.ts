@@ -14,8 +14,8 @@ import {
         style({
           position: 'absolute',
           width: '100%',
-          top: 0,
-          left: 0,
+          top: 70,
+          left: 38,
         })
       ], { optional: true }),
   
@@ -30,13 +30,13 @@ import {
       // Fase di animazione: esci e entra contemporaneamente
       group([
         query(':leave', [
-          animate('3000ms ease', style({
+          animate('300ms ease', style({
             transform: 'translateX(-30%)',
             opacity: 0
           }))
         ], { optional: true }),
         query(':enter', [
-          animate('3000ms ease', style({
+          animate('1000ms ease', style({
             transform: 'translateX(0)',
             opacity: 1
           }))

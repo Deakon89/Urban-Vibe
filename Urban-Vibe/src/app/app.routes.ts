@@ -5,7 +5,7 @@ import { SearchbarComponent } from './component/search/search.component';
 import { animation } from '@angular/animations';
 
 export const routes: Routes = [
-    {  path: '', component: HomeComponent , data:{animation: ''}, children: [
+    {  path: '', component: HomeComponent , children: [
         { path: 'about-us', component: AboutUsComponent, data:{animation: 'about-us'} },
         { path: 'search', component: SearchbarComponent, data:{animation: 'search'} },
     ]},
