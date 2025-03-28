@@ -46,6 +46,10 @@ nav {
     width: 100%;
 }
 
+.github-icon {
+    color: white;
+}
+
 .menu-icon {
     background: transparent;
     border: none;

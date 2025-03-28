@@ -17,14 +17,11 @@ import { MatCardModule } from '@angular/material/card';
 export class DisplayComponent implements OnChanges {
   @Input() city?: string; 
   airQualityInfo: any;
-  cityImageUrl: string = '';
-
+  
   constructor(private airQualityService: AirQualityService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['city'] && this.city) {
-      this.cityImageUrl = `https://source.unsplash.com/featured/?${encodeURIComponent(this.city)}`;
-      console.log(this.cityImageUrl);
       this.airQualityService.getAirQuality(this.city).subscribe({
         next: (data) => {
           console.log(data);

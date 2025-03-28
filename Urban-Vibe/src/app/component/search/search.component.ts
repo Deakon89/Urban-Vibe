@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { DisplayComponent } from '../display/display.component';
+import { PexelsService } from '../../service/pexels.service';
 
 
 @Component({
@@ -25,25 +26,36 @@ import { DisplayComponent } from '../display/display.component';
 export class SearchbarComponent {
   currentCity?: string;
   searchQuery: string = '';
+  photos: any[] = [];
 
   @Output() search = new EventEmitter<string>();
 
-  // onSearch(): void {
-  //   this.search.emit(this.searchQuery);
-  // }
+  constructor(private pexelsService: PexelsService) {}
 
   handleSearch(city: string): void {
     this.currentCity = city;
     this.currentCity = city.trim() !== '' ? city : undefined;
+    if (this.currentCity) {
+    this.pexelsService.searchPhotos(city).subscribe({
+      next: (data) => {
+        console.log('Foto ricevute:', data);
+        this.photos = data.photos; // Pixabay restituisce le foto in "photos"
+      },
+      error: (error) => {
+        console.error('Errore durante la ricerca delle foto:', error);
+      }
+    });
+    }  else {
+    this.photos = [];
   }
-
-  // onSearchChange(): void {
-  //   this.search.emit(this.searchQuery);
-  // }
+  
+}
 
   clearSearch(): void {
     this.searchQuery = '';
     this.search.emit(this.searchQuery);
+    this.currentCity = undefined;
+    this.photos = [];
   }
 
 }

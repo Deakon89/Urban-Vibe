@@ -10,5 +10,10 @@
   </mat-form-field>
 </div>
 <div>
+  <div *ngIf="photos?.length">
+    <div *ngFor="let photo of photos" style="margin-top: 1rem;">
+      <img [src]="photo.src.large" [alt]="currentCity" style="width:100%; max-height:300px; object-fit: cover;">
+    </div>
+  </div>
   <app-display *ngIf="currentCity" [city]="currentCity"></app-display>
 </div>
