@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { routeAnimations } from '../../route-animation';
 
-
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -23,8 +21,9 @@ export class HomeComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet?.activatedRouteData?.['animation'];
   }
-  
 
+ 
+  
   toggleMenu() {
     this.menuActive = !this.menuActive;
   }

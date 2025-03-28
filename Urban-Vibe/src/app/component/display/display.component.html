@@ -1,0 +1,14 @@
+<mat-card *ngIf="airQualityInfo">
+  <img [src]="cityImageUrl" alt="Immagine di {{ city }}" style="width: 100%; max-height: 300px; object-fit: cover;">
+  <mat-card-title>
+    Città: {{ city }} - Qualità dell'Aria: {{ airQualityInfo.overall_aqi }}
+  </mat-card-title>
+  <mat-card-content>
+    <p>CO: {{ airQualityInfo.CO.concentration }} (AQI: {{ airQualityInfo.CO.aqi }})</p>
+    <p>NO2: {{ airQualityInfo.NO2.concentration }} (AQI: {{ airQualityInfo.NO2.aqi }})</p>
+    <p>O3: {{ airQualityInfo.O3.concentration }} (AQI: {{ airQualityInfo.O3.aqi }})</p>
+    <p>PM2.5: {{ airQualityInfo["PM2.5"].concentration }} (AQI: {{ airQualityInfo["PM2.5"].aqi }})</p>
+    <p>PM10: {{ airQualityInfo.PM10.concentration }} (AQI: {{ airQualityInfo.PM10.aqi }})</p>
+    <p>SO2: {{ airQualityInfo.SO2.concentration }} (AQI: {{ airQualityInfo.SO2.aqi }})</p>
+  </mat-card-content>
+</mat-card>

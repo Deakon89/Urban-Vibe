@@ -5,6 +5,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { DisplayComponent } from '../display/display.component';
 
 
 @Component({
@@ -15,20 +16,30 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-    CommonModule
+    CommonModule,
+    DisplayComponent
   ],
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
 export class SearchbarComponent {
-
+  currentCity?: string;
   searchQuery: string = '';
 
   @Output() search = new EventEmitter<string>();
 
-  onSearchChange(): void {
-    this.search.emit(this.searchQuery);
+  // onSearch(): void {
+  //   this.search.emit(this.searchQuery);
+  // }
+
+  handleSearch(city: string): void {
+    this.currentCity = city;
+    this.currentCity = city.trim() !== '' ? city : undefined;
   }
+
+  // onSearchChange(): void {
+  //   this.search.emit(this.searchQuery);
+  // }
 
   clearSearch(): void {
     this.searchQuery = '';
