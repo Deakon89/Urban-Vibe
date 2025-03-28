@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { routeAnimations } from './route-animation';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -9,6 +11,7 @@ import { routeAnimations } from './route-animation';
   imports: [
     RouterOutlet,
     CommonModule,
+    // FontAwesomeModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -21,6 +24,7 @@ import { routeAnimations } from './route-animation';
   
 })
 export class AppComponent {
+  // faGithub = ['fab', 'github'];
   title = 'Urban-Vibe';
   prepareRoute(outlet: RouterOutlet) {
     return outlet?.activatedRouteData?.['animation'];

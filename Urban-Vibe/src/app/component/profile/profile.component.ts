@@ -19,13 +19,13 @@ export class ProfileComponent {
 
   constructor(private router: Router) {}
   
-  // Dati fittizi utente (temporanei)
+  // example data
   user = {
     username: 'Start2Impact',
     bio: 'Frontend Developer | Angular Enthusiast 🚀',
     email: 'Start2Impact@example.com',
     location: 'Rieti, Italia',
-    avatarUrl: 'https://i.pravatar.cc/300' // avatar fittizio
+    avatarUrl: 'https://i.pravatar.cc/300' 
   };
 
 

@@ -9,7 +9,7 @@ import {
   
   export const routeAnimations = trigger('routeAnimations', [
     transition('* <=> *', [
-      // Imposta stile base
+      
       query(':enter, :leave', [
         style({
           position: 'absolute',
@@ -19,7 +19,7 @@ import {
         })
       ], { optional: true }),
   
-      // Fase iniziale: nuovo componente entra da destra
+    
       query(':enter', [
         style({
           transform: 'translateX(100%)',
@@ -27,7 +27,7 @@ import {
         })
       ], { optional: true }),
   
-      // Fase di animazione: esci e entra contemporaneamente
+      
       group([
         query(':leave', [
           animate('300ms ease', style({

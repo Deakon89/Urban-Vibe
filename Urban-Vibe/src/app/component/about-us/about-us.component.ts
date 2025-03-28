@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent {
+  // example team members
   teamMembers = [
     { name: 'Francesco Rossi', role: 'Frontend Developer', avatar: 'https://i.pravatar.cc/201' },
     { name: 'Ilenia Bianchi', role: 'Project Manager', avatar: 'https://i.pravatar.cc/202' },

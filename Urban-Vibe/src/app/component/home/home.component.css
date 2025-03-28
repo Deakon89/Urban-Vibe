@@ -38,7 +38,7 @@ nav {
     bottom: -3px;
     height: 2px;
     width: 0;
-    background-color: #d4b8ff; /* colore linea hover */
+    background-color: #d4b8ff;
     transition: width 0.3s ease;
 }
 
@@ -56,7 +56,7 @@ nav {
     font-size: 2rem;
     color: white;
     cursor: pointer;
-    display: none; /* nascosto su desktop */
+    display: none;
   }
 
 .logo {
@@ -197,8 +197,8 @@ footer p{
     }
   
     .nav-links {
-      position: absolute; /* Imposta position: absolute invece di relative */
-      top: 100%;          /* Subito sotto la navbar */
+      position: absolute; 
+      top: 100%;          
       left: 0;
       background: #6600ff;
       width: 100%;

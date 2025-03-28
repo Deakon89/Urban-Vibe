@@ -14,6 +14,8 @@ import { MatCardModule } from '@angular/material/card';
   templateUrl: './display.component.html',
   styleUrl: './display.component.css'
 })
+
+// city display
 export class DisplayComponent implements OnChanges {
   @Input() city?: string; 
   airQualityInfo: any;

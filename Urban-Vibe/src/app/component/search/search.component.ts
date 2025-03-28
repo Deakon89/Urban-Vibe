@@ -23,6 +23,8 @@ import { PexelsService } from '../../service/pexels.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
+
+// search from pexels and airQuality API
 export class SearchbarComponent {
   currentCity?: string;
   searchQuery: string = '';
@@ -39,7 +41,7 @@ export class SearchbarComponent {
     this.pexelsService.searchPhotos(city).subscribe({
       next: (data) => {
         console.log('Foto ricevute:', data);
-        this.photos = data.photos; // Pixabay restituisce le foto in "photos"
+        this.photos = data.photos; 
       },
       error: (error) => {
         console.error('Errore durante la ricerca delle foto:', error);
