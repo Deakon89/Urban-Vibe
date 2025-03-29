@@ -1,0 +1,8 @@
+[build]
+  command = "ng prerender"
+  publish = "dist/urban-vibe/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
