@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../enviroment/enviroment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PexelsService {
   private apiUrl = 'https://api.pexels.com/v1/search';
-  private apiKey = 'w7lLJhm3jO3qG24J5gNdhCYrMKBz1EjsuuS3KuJpqn6hEO97z1fBijxO'; 
+  private apiKey = environment.apiKeyPexels; 
 
   constructor(private http: HttpClient) {}
 

@@ -73,6 +73,18 @@
           },
           "defaultConfiguration": "development"
         },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "Urban-Vibe:build:production",
+            "routes": [
+              "/",
+              "/about-us",
+              "/profile",
+              "/search" 
+            ]
+          }
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
