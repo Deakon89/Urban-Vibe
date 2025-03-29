@@ -1,6 +1,6 @@
 [build]
-  command = "ng prerender"
-  publish = "dist/urban-vibe/browser"
+  command = "ng build"
+  publish = "dist/urban-vibe"
 
 [[redirects]]
   from = "/*"
