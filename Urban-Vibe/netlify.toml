@@ -1,8 +1,7 @@
 [build]
-  command = "ng build"
-  publish = "dist/urban-vibe"
+  command = "ng build --configuration=production && ng run urban-vibe:server"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  publish = "dist/urban-vibe/browser"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
