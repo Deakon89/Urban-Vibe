@@ -1,118 +1,59 @@
-# LookBook - Gestione di un Negozio di Abbigliamento
+# **Urban-Vibe** 
 
-![Urban-Vibe](https://urban-vibe.netlify.app/)
+## link al progetto-->[Urban-Vibe](https://urban-vibe.netlify.app/)
 
-LookBook è un'applicazione Java che simula una parte di gestione di un negozio di abbigliamento di seconda mano.
+## **Descrizione**  
 
-## 📌 Funzionalità
-
-- Visualizzazione dell'inventario dei capi di abbigliamento
-- Acquisto e restituzione di capi
-- Aggiunta di nuovi utenti
-- Esportazione della lista dei capi disponibili in formato CSV
-- Caricamento dati da file CSV
+Web app per cercare il tuo libro preferito, per genere, sviluppato in JavaScript. 
 
 ---
 
-## 🛠️ Configurazione e Installazione
+## **Istruzioni d'uso** 
 
-### 1️⃣ Requisiti
+L'utilizzo è molto semplice.
+Basta scrivere la categoria di libri che vuoi cercare e premere il tasto a forma di libro.
+Si aprirà una sezione con i libri del genere scelto da te e ,con l'apposito tasto "Read more", potrai anche approfondire con una piccola descrizione.
+Qualche descrizione potrebbe contenere link a wikipedia o ad altri siti. 
 
-- **Java 17+**
-- **Maven** (per la gestione delle dipendenze e la compilazione del progetto)
+--- 
 
-### 2️⃣ Clonazione del Repository
+Eventuali aggiornamenti riguardo nuove funzionalità saranno aggiunte nel presente Readme nell'apposita sezione. 
 
-```sh
-# Clona il repository GitHub
-git clone https://github.com/tuo-username/lookbook.git
-cd lookbook
-```
+--- 
 
-### 3️⃣ Compilazione del Progetto
+##  display di ricerca
 
-Per compilare il progetto ed eseguire i test:
+![search]() 
 
-```sh
-mvn clean install
-```
+--- 
 
-Se vuoi generare il file JAR eseguibile:
+## Sezione Cover 
 
-```sh
-mvn package
-```
-
-Il file verrà creato nella cartella `target/` con il nome:
-
-```sh
-target/lookbook-1.0-SNAPSHOT.jar
-```
-
-### 4️⃣ Esecuzione del Programma
-
-Dopo la compilazione, puoi eseguire il programma con il comando:
-
-```sh
-java -jar target/lookbook-1.0-SNAPSHOT.jar
-```
----
-🛠️ Comandi Principali
-
-Ecco i principali comandi disponibili nell'applicazione:
-
-| Comando |Descrizione            |
-|---------|-----------------------|
-| 1       |Visualizza tutti i capi|                        
-| 2       |Comprare un capo       |
-| 3       |Restituire un capo     |
-| 4       |Aggiungere un utente   |
-| 5       |Esportare i capi(.csv) |
-| 0       |uscire dall' App       |
----
-
-## 📂 Struttura del Progetto
-
-```
-lookbook/
-├── src/
-│   ├── main/
-│      ├── java/com/lookbook/
-│      │   ├── App.java       # Classe principale
-│      │   ├── dao/           # Gestione dati
-│      │   ├── models/        # Modelli di dati
-│      │   ├── utils/         # Utility
-│      ├── resources/
-│          ├── capi.csv       # Dati dei capi di abbigliamento
-|
-├── pom.xml                   # Configurazione Maven
-├── README.md                 # Documentazione
-```
+![cover]()
 
 ---
 
-## 🛠️ Contributi
+## modal descrizione 
 
-Se vuoi contribuire al progetto:
-1. Fai un **fork** del repository
-2. Crea un nuovo branch con la tua feature (`git checkout -b feature/nome-feature`)
-3. Effettua le modifiche e committale (`git commit -m 'Aggiunta nuova feature'`)
-4. Esegui il push sul tuo repository (`git push origin feature/nome-feature`)
-5. Apri una **Pull Request**!
+![modal]()
 
 ---
 
-## 🐛 Segnalazione Bug
+## **Description**
 
-Se trovi un bug o vuoi suggerire una funzionalità, apri un **Issue** su GitHub descrivendo il problema in dettaglio.
-
----
-
-## 📬 Contatti
-
-- **Email:** franck.devw@gmail.com
+Web app to search for your favorite book, by genre, developed in JavaScript.
 
 ---
 
-🚀 **Grazie per aver utilizzato LookBook!**
+## **Instructions for use** 
+
+Use is very simple.
+Just write the category of books you want to search for and press the book-shaped button.
+A section will open with books of the genre chosen by you and, with the appropriate "Read more" button, you can also delve deeper with a small description.
+Some descriptions may contain links to Wikipedia or other sites.
+
+---
+
+Any updates regarding new features will be added to this Readme in the appropriate section.
+
 
