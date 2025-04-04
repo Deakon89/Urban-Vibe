@@ -2,18 +2,18 @@
 
 ## link al progetto-->[Urban-Vibe](https://urban-vibe.netlify.app/)
 
-## **Descrizione**  
+## 📌 **Descrizione**  
 
-Web app per cercare il tuo libro preferito, per genere, sviluppato in JavaScript. 
+UB è una Web app, siluppata in angular e typescript, che restituisce il valore AQI relativo alla qualità dell'aria in una determinata città. 
 
 ---
 
-## **Istruzioni d'uso** 
+## 📌 **Istruzioni d'uso** 
 
 L'utilizzo è molto semplice.
-Basta scrivere la categoria di libri che vuoi cercare e premere il tasto a forma di libro.
-Si aprirà una sezione con i libri del genere scelto da te e ,con l'apposito tasto "Read more", potrai anche approfondire con una piccola descrizione.
-Qualche descrizione potrebbe contenere link a wikipedia o ad altri siti. 
+Nella home page premendo l'apposito button search faremo apparire la barra di ricerca.
+Qui, semplicemente digitando il nome di una città casuale, faremo apparire  una sezione con un immagine della città ricercata e il display per le info sull'aria.
+Le foto sono randomiche e potrebbero contenere scene di vita quotidiana all'interno della città ricercata, nel caso il sistema non dovesse trovare la città ricercata si aprirà una foto casuale. 
 
 --- 
 
@@ -21,39 +21,23 @@ Eventuali aggiornamenti riguardo nuove funzionalità saranno aggiunte nel presen
 
 --- 
 
-##  display di ricerca
+## 📌Tecnologie Utilizzate
+- Angular 19
+- Angular Material
+- RxJS
+- @angular/animations
 
-![search]() 
 
---- 
+## 📌Installazione
+Per eseguire questo progetto localmente, segui questi passi nel tuo ambiente di sviluppo:
 
-## Sezione Cover 
-
-![cover]()
-
+```bash
+git clone https://github.com/tuo-username/urban-tribe.git
 ---
-
-## modal descrizione 
-
-![modal]()
-
+cd urban-tribe
 ---
-
-## **Description**
-
-Web app to search for your favorite book, by genre, developed in JavaScript.
-
+npm install(dipendenze necessarie Angular-CLI, AngularMaterial, ngx cookie service, angular/animations)
 ---
-
-## **Instructions for use** 
-
-Use is very simple.
-Just write the category of books you want to search for and press the book-shaped button.
-A section will open with books of the genre chosen by you and, with the appropriate "Read more" button, you can also delve deeper with a small description.
-Some descriptions may contain links to Wikipedia or other sites.
-
----
-
-Any updates regarding new features will be added to this Readme in the appropriate section.
+ng serve
 
 
