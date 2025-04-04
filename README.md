@@ -36,7 +36,7 @@ git clone https://github.com/tuo-username/urban-tribe.git
 ---
 cd urban-tribe
 ---
-npm install(dipendenze necessarie Angular-CLI, AngularMaterial, ngx cookie service, angular/animations)
+npm install(dipendenze necessarie Angular-CLI, AngularMaterial, angular/animations)
 ---
 ng serve
 
